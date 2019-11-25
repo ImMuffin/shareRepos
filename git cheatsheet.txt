@@ -1,0 +1,51 @@
+cd				into folder
+..				to parent folder
+../..				2 levels up
+ctrl - a			line begin.
+ctrl - e			line end.
+ctrl - u			delete towards line begin.
+ctrl - k			delete towards line end
+ls				show all files in horizontal format
+ls -l				long format
+ls *r				everything starting w r
+ls -a				all files (hidden files)
+ctrl - l			clears screen
+	
+git init			creates repository
+git add <>			adds file to repository (-a adds all not-ignored files)
+git commit -m ""		commits files to local repository with comment
+git status			gets status of git repos
+git log				shows changes to git repos
+git help <>			shows help
+git <> --help
+git reset			removes file from repos
+git clone <site> <where>	clones online repos into set folder
+//clones repos.git into current folder (. at the end means here)
+//git clone https://.../repos.git .
+git remote -v			shows info about cloned repos
+git remote  add origin <URL>	sets origin for repos
+git branch -a 			shows all branches in current repos
+git diff			shows the difference between commited and fresh
+git pull origin master		pulls changes since last the last pull
+git push <where> <what branch>	pushes changes online to the remote repos
+git branch <name of branch>	creates a branch
+git checkout <name of branch>	opens that branch
+git branch --merged		shows merged branches
+git merge <name>		merges branch foo with master
+git branch -d <name>		deletes said branch
+
+rm -r -f <>			removes file
+
+touch .gitignore		reates file (.gitignore)
+//into .gitignore
+.sln
+.vcxproj
+
+How to work with git
+git init			creates repos
+touch .gitignore		set what files should not be commited
+git branch/checkout xyzzy	create/open branch
+//work on code foo
+git add -a			add files which you want to commit (-a add all, can be added one by one)
+git commit -m "Changed foo"	commits changes to code in foo to branch
+git push -u origin xyzzy
