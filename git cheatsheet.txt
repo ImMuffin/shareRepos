@@ -10,7 +10,11 @@ ls -l				long format
 ls *r				everything starting w r
 ls -a				all files (hidden files)
 ctrl - l			clears screen
-	
+
+//commit id
+git config --global user.name "Xyzzy"			sets commit name
+git config --global user.email "xyzzy@foo.com"		sets commit email
+
 git init			creates repository
 git add <>			adds file to repository (-a adds all not-ignored files)
 git commit -m ""		commits files to local repository with comment
