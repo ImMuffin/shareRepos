@@ -20,6 +20,10 @@ git add <>			adds file to repository (-a adds all not-ignored files)
 git commit -m ""		commits files to local repository with comment
 git status			gets status of git repos
 git log				shows changes to git repos
+git log --author=xyzzy		changes by certain author
+git log --pretty=oneline	compressed log
+git log --graph --oneline --decorate --all	tree ascii art of all branches
+git log --name-status		only shows changed files
 git help <>			shows help
 git <> --help
 git reset			removes file from repos
@@ -53,3 +57,7 @@ git branch/checkout xyzzy	create/open branch
 git add -a			add files which you want to commit (-a add all, can be added one by one)
 git commit -m "Changed foo"	commits changes to code in foo to branch
 git push -u origin xyzzy
+
+more info and source:
+https://rogerdudler.github.io/git-guide/
+https://www.youtube.com/watch?v=HVsySz-h9r4
